@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
 	background-image: url(../img/bg5.jpg);
 	background-attachment: fixed;
@@ -46,7 +54,6 @@ header.main-header{
 header.main-header > h1{
 	padding: 1px;
 	margin-bottom: 20px 0;
-	text-align: center;
 
 	color:white;
 
@@ -87,14 +94,17 @@ header.main-header > h1{
 /** content **/
 .info-section {
  	padding: 30px 60px;
-	text-align: center;
 
 	background-color: #fff;
+}
+.info-section header{
+	text-align: center;
 }
 .info-section header h2{
 	padding: 1px;
 	margin: 0 auto;
 
+	text-align: center;
 	font-size: 28px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -132,6 +142,9 @@ header.main-header > h1{
 	padding-top: 100px;
 	float:left;
 }
+.whatido{
+	text-align: center;
+}
 .whatido__skill--code {
   background-image: url(../img/skill-code.png);
 }
@@ -144,3 +157,93 @@ header.main-header > h1{
   background-image: url(../img/skill-product.png);
 }
 
+/* education */
+ul.education-experience__list{
+	list-style: none;
+	margin:0 auto;
+	padding: 0;
+}
+
+ul.education-experience__list li{
+	width: 100%;
+}
+
+ul.education-experience__list li img{
+	float:left;
+	width: 180px;
+	margin: 0px 60px;
+}
+.education-experience__list__description{
+	overflow:hidden;
+}
+.education-experience__list h3,
+p.education-experience__title{
+	margin: 0px;
+	font-weight: bold;
+}
+
+
+/** photos **/
+.photo{
+	text-align: center;
+}
+ul.photos__list li{
+	width: 25%;
+	padding: 10px;
+}
+ul.photos__list li img{
+	width: 100%;
+}
+
+/** get in touch */
+.get-in-touch{
+	text-align: center;
+}
+ul.get-in-touch__list li{
+	width: 25%;
+	padding: 30px;
+}
+ul.get-in-touch__list li img{
+	width: 100%;
+}
+
+/** contatct **/
+
+.contact form{
+	width: 40%;
+	margin: 16px auto;
+	padding: 1px;
+
+	position: relative;
+}
+.contact form * {
+	width: 100%;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.contact input{
+	padding: 8px;
+}
+.contact label{
+	position: absolute;
+	text-align: right;
+	left: -100%;
+	padding: 8px;
+}
+
+.contact button {
+  border: none;
+  border-radius: 9999px;
+  height: 2rem;
+
+  background: #ffd524;
+
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #fff;
+  box-shadow: 0 3px 0 #daae1d;
+}
